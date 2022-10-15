@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+
+  postgres:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_USER=camunda
+      - POSTGRES_PASSWORD=camunda
+    ports:
+      - '5432:5432'
+    volumes:
+      - psql:/var/lib/postgresql/data
+
+  camunda:
+    image: camunda/camunda-bpm-platform
+    environment:
+      - DB_DRIVER=org.postgresql.Driver
+      - DB_URL=jdbc:postgresql://postgres:5432/camunda
+      - DB_USERNAME=camunda
+      - DB_PASSWORD=camunda
+      - WAIT_FOR=postgres:5432        # waiting for psql instance to be ready
+    links:
+      - postgres
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+volumes:
+  psql:
+    driver: local
