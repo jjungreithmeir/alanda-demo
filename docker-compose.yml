@@ -40,6 +40,8 @@ services:
       - camunda
     links:
       - camunda
+    volumes:
+      - ./src/main/resources/bpmn:/workspace/BOOT-INF/classes/bpmn
 
 volumes:
   psql:

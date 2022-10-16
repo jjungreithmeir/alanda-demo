@@ -27,9 +27,9 @@ public class AlandademoApplicationController {
         true,
         "test_deployment",
         null,
-        new File(AlandademoApplicationController.class.getClassLoader().getResource("testdiagram.bpmn").getFile())
+        new File(AlandademoApplicationController.class.getClassLoader().getResource("bpmn/testdiagram.bpmn").getFile())
     );
-    return "Deployed successfully";
+    return "Successfully deployed" + AlandademoApplicationController.class.getClassLoader().getResource("bpmn/testdiagram.bpmn").getPath();
   }
 
 

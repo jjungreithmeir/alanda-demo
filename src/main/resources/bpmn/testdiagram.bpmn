@@ -9,7 +9,7 @@
       <bpmn:incoming>Flow_09mxlqz</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_09mxlqz" sourceRef="basic_task" targetRef="Event_1leyv4e" />
-    <bpmn:userTask id="basic_task" name="not-so-basic-task">
+    <bpmn:userTask id="basic_task" name="test2">
       <bpmn:incoming>Flow_16e2xuw</bpmn:incoming>
       <bpmn:outgoing>Flow_09mxlqz</bpmn:outgoing>
     </bpmn:userTask>
@@ -22,7 +22,7 @@
       <bpmndi:BPMNShape id="Event_1leyv4e_di" bpmnElement="Event_1leyv4e">
         <dc:Bounds x="412" y="99" width="36" height="36" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_0vmdn2k_di" bpmnElement="basic_task">
+      <bpmndi:BPMNShape id="Activity_1jtwhgy_di" bpmnElement="basic_task">
         <dc:Bounds x="260" y="77" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>

@@ -26,7 +26,6 @@ Check whether tables are created properly
 
 Check REST response from http://localhost:8080/engine-rest/process-instance/count
 
-
 #### Verify WebApp Functionality
 
 All webapps can be accessed through the following link: http://localhost:8080/camunda-welcome/index.html
@@ -34,6 +33,10 @@ All webapps can be accessed through the following link: http://localhost:8080/ca
 The cockpit may be reached through http://localhost:8080/camunda/app/cockpit/default/#/dashboard
 
 The username & password for any authentication is "demo" by default.
+
+#### Verify bpmn mounting
+
+    docker exec -it alandaio-spring-app-1 /bin/sh
 
 ## Sources
 - https://github.com/camunda/docker-camunda-bpm-platform/blob/next/test/docker-compose.yml
