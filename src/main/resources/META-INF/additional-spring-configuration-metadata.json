@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "camunda.bpm.client.base-url",
+      "type": "java.lang.String",
+      "description": "Description for camunda.bpm.client.base-url."
+    }
+  ] }
