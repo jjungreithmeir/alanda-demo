@@ -8,9 +8,9 @@
 
 ## Setup
 
- Simply start by pulling up the docker stack:
+ Simply start by building the Spring Boot Image and pulling up the docker stack:
 
-    docker-compose up
+    ./mvnw clean spring-boot:build-image && docker-compose up
 
 ---
 
@@ -33,9 +33,12 @@ All webapps can be accessed through the following link: http://localhost:8080/ca
 
 The cockpit may be reached through http://localhost:8080/camunda/app/cockpit/default/#/dashboard
 
+The username & password for any authentication is "demo" by default.
+
 ## Sources
 - https://github.com/camunda/docker-camunda-bpm-platform/blob/next/test/docker-compose.yml
 - https://docs.camunda.org/manual/latest/reference/rest/process-instance/
 - https://www.youtube.com/watch?v=fLeUaVwpuZw
 - https://stackoverflow.com/questions/68562246/access-remote-camunda-service-programmatically
 - https://github.com/camunda-community-hub/camunda-platform-7-rest-client-java
+- https://stackoverflow.com/questions/31746182/docker-compose-wait-for-container-x-before-starting-y/41854997#41854997

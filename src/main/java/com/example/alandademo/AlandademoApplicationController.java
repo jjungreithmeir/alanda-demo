@@ -1,16 +1,15 @@
-package restapp;
+package com.example.alandademo;
 
 import java.io.File;
 import lombok.AllArgsConstructor;
 import org.camunda.community.rest.client.api.DeploymentApi;
-import org.camunda.community.rest.client.api.ProcessDefinitionApi;
 import org.camunda.community.rest.client.invoker.ApiException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @AllArgsConstructor
-public class ApplicationController {
+public class AlandademoApplicationController {
 
   private DeploymentApi deploymentApi;
 
@@ -28,7 +27,7 @@ public class ApplicationController {
         true,
         "test_deployment",
         null,
-        new File(Application.class.getClassLoader().getResource("testdiagram.bpmn").getFile())
+        new File(AlandademoApplicationController.class.getClassLoader().getResource("testdiagram.bpmn").getFile())
     );
     return "Deployed successfully";
   }
