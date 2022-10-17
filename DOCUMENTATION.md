@@ -2,7 +2,8 @@
 
 ## Introduction
 
-- Tomcat is used as webserver as no specific
+- Camunda Run is used for this exercise
+- Networking is done via docker links/hostname
 
 ---
 
@@ -45,3 +46,4 @@ The username & password for any authentication is "demo" by default.
 - https://stackoverflow.com/questions/68562246/access-remote-camunda-service-programmatically
 - https://github.com/camunda-community-hub/camunda-platform-7-rest-client-java
 - https://stackoverflow.com/questions/31746182/docker-compose-wait-for-container-x-before-starting-y/41854997#41854997
+- https://stackoverflow.com/questions/65325129/execute-spring-buildpacks-when-calling-docker-compose-build-command

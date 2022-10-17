@@ -1,6 +1,6 @@
 Task,Time
-Reading & browsing Camunda Docs,2h
+Reading & browsing Camunda Docs,4h
 Writing Documentation,1h
-Preparing docker yml file,0.5h
-Writing basic Java Spring Boot Code & integrating Camunda Rest API,1h
-"",
+Preparing docker yml file,2h
+Writing basic Java Spring Boot Code & integrating Camunda Rest API,3h
+Integrating Service into Camunda instance,5h
